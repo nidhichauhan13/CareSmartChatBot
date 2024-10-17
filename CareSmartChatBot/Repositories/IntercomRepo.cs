@@ -12,6 +12,7 @@ namespace CareSmartChatBot.Repositories
         Task<string> UpdateConversation(string content, string id, int totalPage);
         public Conversation GetLastConversation();
     }
+
     public class IntercomRepo: IIntercomRepo
     {
         private readonly ApplicationDBContext _dbContext;
